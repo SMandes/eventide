@@ -1,0 +1,134 @@
+/*
+=======================
+Global Styles
+=======================
+*/
+
+body{
+    color: #828689;
+}
+
+.fa-chevron-circle-right{
+    padding: 0 0 0 10px;
+}
+/*
+=======================
+Header
+=======================
+*/
+#header{
+    background-color: #525b64;
+    text-align: center;
+    color: #FFF;
+    padding: 13% 0;
+}
+    #header h1{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.3em;
+    }
+
+#header .btn-primary{
+    background-color: #7ea4e8;
+    border: 0;
+    margin: 10px 10px 0 0;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+    #header .btn-primary:hover{
+        background-color: #6a8ac4;
+    }
+    
+#header .btn-default{
+    background-color: #6a7079;
+    border: 0;
+    margin: 10px 0 0 10px;
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+    #header .btn-default:hover{
+        background-color: #5d626a;
+    }   
+
+/*
+=======================
+Body
+=======================
+*/
+
+/*
+=======================
+About
+=======================
+*/
+#about{
+    padding: 80px 0;
+    
+}
+/*
+=======================
+Footer
+=======================
+*/
+
+/*
+=======================
+Other
+=======================
+*/
+
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 2px solid #ececec;
+    border-radius: 5px 5px 0 0;
+  margin-left: -1px; 
+  position: relative;
+  left: 1px;
+padding: 15px 0px 15px 25px;
+width: 129px;
+    
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 71px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 25px;
+  border: 2px solid #ececec;
+    border-radius: 0 5px 5px 5px;
+    min-height: 100%;
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+/*
+=======================
+Media Queries
+=======================
+*/
